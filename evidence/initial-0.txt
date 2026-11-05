@@ -1,0 +1,56 @@
+
+> vite-react-typescript-starter@0.0.0 test
+> vitest run --reporter=verbose
+
+
+ RUN  v2.1.9 <LOCAL_WORKSPACE>/work/baseline
+
+ ✓ src/booking.test.tsx > Practice #07: Room Availability Tests (T01–T17) > T01 (AC4): touching after is available
+ ✓ src/booking.test.tsx > Practice #07: Room Availability Tests (T01–T17) > T02 (AC1): starts now is rejected
+ ✓ src/booking.test.tsx > Practice #07: Room Availability Tests (T01–T17) > T03 (AC1): zero duration is rejected
+ ✓ src/booking.test.tsx > Practice #07: Room Availability Tests (T01–T17) > T04 (AC1): reversed interval is rejected
+ ✓ src/booking.test.tsx > Practice #07: Room Availability Tests (T01–T17) > T05 (AC1): past day end is rejected
+ ✓ src/booking.test.tsx > Practice #07: Room Availability Tests (T01–T17) > T06 (AC2): exactly 120 minutes is accepted
+ ✓ src/booking.test.tsx > Practice #07: Room Availability Tests (T01–T17) > T07 (AC2): 121 minutes is rejected
+ ✓ src/booking.test.tsx > Practice #07: Room Availability Tests (T01–T17) > T08 (AC4): touching before is available
+ ✓ src/booking.test.tsx > Practice #07: Room Availability Tests (T01–T17) > T09 (AC4): partial overlap is rejected
+ ✓ src/booking.test.tsx > Practice #07: Room Availability Tests (T01–T17) > T10 (AC4): interval containing existing booking is rejected
+ ✓ src/booking.test.tsx > Practice #07: Room Availability Tests (T01–T17) > T11 (AC4): interval inside existing booking is rejected
+ ✓ src/booking.test.tsx > Practice #07: Room Availability Tests (T01–T17) > T12 (AC4): identical interval is rejected
+ ✓ src/booking.test.tsx > Practice #07: Room Availability Tests (T01–T17) > T13 (AC3): blocked room is rejected regardless of times
+ ✓ src/booking.test.tsx > Practice #07: Room Availability Tests (T01–T17) > T14 (AC4): request with empty bookings list is accepted
+ ✓ src/booking.test.tsx > Practice #07: Room Availability Tests (T01–T17) > T15 (AC5): bookings array remains unmutated after call
+ ✓ src/booking.test.tsx > Practice #07: Room Availability Tests (T01–T17) > T16 (AC1): early day start boundary is accepted
+ ✓ src/booking.test.tsx > Practice #07: Room Availability Tests (T01–T17) > T17 (AC4): fits neatly between multiple bookings
+ ✓ src/booking.test.tsx > validateBooking: result object and failure reasons > available result has ok:true and no reasons
+ ✓ src/booking.test.tsx > validateBooking: result object and failure reasons > range violation produces a range reason
+ ✓ src/booking.test.tsx > validateBooking: result object and failure reasons > past start produces a current-time reason referencing the label
+ ✓ src/booking.test.tsx > validateBooking: result object and failure reasons > too-long duration produces a duration reason
+ ✓ src/booking.test.tsx > validateBooking: result object and failure reasons > blocked room produces a blocked reason
+ ✓ src/booking.test.tsx > validateBooking: result object and failure reasons > overlap reason lists the conflicting booking label
+ ✓ src/booking.test.tsx > validateBooking: result object and failure reasons > multiple violations accumulate multiple reasons
+ ✓ src/booking.test.tsx > validateBooking: result object and failure reasons > canBook is a boolean wrapper consistent with validateBooking
+ ✓ src/booking.test.tsx > shared fixtures > SAMPLE_ROOM has UI fields id and title on every booking
+ ✓ src/booking.test.tsx > shared fixtures > BASE_BOOKINGS is a non-empty array of intervals
+ ✓ src/booking.test.tsx > shared fixtures > DEFAULT_CURRENT_TIME_MIN is within the day range
+ ✓ src/booking.test.tsx > regression: named scenarios tied to AC1–AC6 > past start time is rejected — AC1 requires start > now
+ ✓ src/booking.test.tsx > regression: named scenarios tied to AC1–AC6 > reversed interval (start > end) is rejected — AC1 requires start < end
+ ✓ src/booking.test.tsx > regression: named scenarios tied to AC1–AC6 > 121-minute duration is rejected while 120 is the AC2 ceiling
+ ✓ src/booking.test.tsx > regression: named scenarios tied to AC1–AC6 > blocked room is rejected even with otherwise-valid times — AC3
+ ✓ src/booking.test.tsx > regression: named scenarios tied to AC1–AC6 > overlapping request is rejected and names the conflicting interval — AC4
+ ✓ src/booking.test.tsx > regression: named scenarios tied to AC1–AC6 > touching at the earlier endpoint is allowed — AC4 permits endpoint contact
+ ✓ src/booking.test.tsx > regression: named scenarios tied to AC1–AC6 > touching at the later endpoint is allowed — AC4 permits endpoint contact
+ ✓ src/booking.test.tsx > regression: named scenarios tied to AC1–AC6 > shared fixtures are unchanged after running validation scenarios — AC5
+ ✓ src/booking.test.tsx > immutability (AC5) > validateBooking does not mutate the bookings array or its elements
+ ✓ src/booking.test.tsx > immutability (AC5) > validateBooking does not mutate when multiple reasons are produced
+
+ Test Files  1 passed (1)
+      Tests  38 passed (38)
+   Start at  22:48:26
+   Duration  1.17s (transform 47ms, setup 0ms, collect 59ms, tests 6ms, environment 0ms, prepare 790ms)
+
+npm notice
+npm notice New minor version of npm available! 11.10.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

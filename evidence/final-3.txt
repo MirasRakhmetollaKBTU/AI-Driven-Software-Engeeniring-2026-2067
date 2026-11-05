@@ -1,0 +1,21 @@
+
+> vite-react-typescript-starter@0.0.0 build
+> vite build
+
+vite v5.4.8 building for production...
+transforming...
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+✓ 39 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.70 kB │ gzip:  0.38 kB
+dist/assets/index-2pnEaDzz.css    6.92 kB │ gzip:  2.18 kB
+dist/assets/index-De9eClMR.js   149.23 kB │ gzip: 48.46 kB
+✓ built in 1.49s
+npm notice
+npm notice New minor version of npm available! 11.10.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

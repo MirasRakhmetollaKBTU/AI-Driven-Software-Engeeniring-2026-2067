@@ -1,0 +1,33 @@
+# Installed dependencies and generated builds
+**/node_modules/
+**/dist/
+evidence/baseline-build/
+
+# Local files and credentials
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Private submission documents (kept locally, never published)
+**/*.pdf
+**/*.docx
+**/*.doc
+**/*.zip
+evidence/private/
+evidence/human-review.md
+
+# Credentials and private keys
+**/.env
+**/.env.*
+!**/.env.example
+**/*.pem
+**/*.key
+**/*.pfx
+**/*.p12
+**/credentials.json
+**/secrets.json
